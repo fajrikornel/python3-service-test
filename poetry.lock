@@ -179,6 +179,29 @@ python-versions = ">=3.7"
 typing-extensions = ">=4.6.0,<4.7.0 || >4.7.0"
 
 [[package]]
+name = "pydantic-settings"
+version = "2.1.0"
+description = "Settings management using Pydantic"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+pydantic = ">=2.3.0"
+python-dotenv = ">=0.21.0"
+
+[[package]]
+name = "python-dotenv"
+version = "1.0.0"
+description = "Read key-value pairs from a .env file and set them as environment variables"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.extras]
+cli = ["click (>=5.0)"]
+
+[[package]]
 name = "sqlalchemy"
 version = "2.0.23"
 description = "Database Abstraction Library"
@@ -252,7 +275,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-ena
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "b5f7151a195321fd12d7da1fcc7d9c00eb0ef88c11af6a4fbf2879bccedef96e"
+content-hash = "b65ac0e96dd6be92c4d1f927b9f77d8a8032a6cc78e89005e77fab9ebf539753"
 
 [metadata.files]
 alembic = []
@@ -270,6 +293,8 @@ markupsafe = []
 psycopg2-binary = []
 pydantic = []
 pydantic-core = []
+pydantic-settings = []
+python-dotenv = []
 sqlalchemy = []
 typing-extensions = []
 werkzeug = []
