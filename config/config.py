@@ -8,5 +8,8 @@ class Settings(BaseSettings):
     db_username: str
     db_password: str
 
+    app_name: str
+    app_port: int
+
 
 settings = Settings(_env_file=".env")
