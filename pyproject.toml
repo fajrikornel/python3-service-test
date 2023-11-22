@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "python3-service-test"
+version = "0.1.0"
+description = ""
+authors = ["Fajri Kornel <fajri.kornel@gopay.co.id>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Flask = "^3.0.0"
+SQLAlchemy = "^2.0.23"
+alembic = "^1.12.1"
+pydantic = "^2.5.1"
+psycopg2-binary = "^2.9.9"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
